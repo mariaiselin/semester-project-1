@@ -1,10 +1,9 @@
+
+
+
 img {
   max-width: 100%;
   height: auto;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 a {
@@ -107,17 +106,6 @@ nav {
   letter-spacing: 2px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* images */
-
-.Exhibitions {
- width: 400px;
-}
-
-.Exhibitions-image {
-
-}
-
 
 /*Tablet*/
 
