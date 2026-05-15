@@ -188,7 +188,7 @@ header {
 }
 
 .card:hover img {
-  transform: scale(1.04);
+  transform: scale(1.04); /* Makes the picture zoom in */
 }
 
 .card-label {
@@ -197,9 +197,9 @@ header {
   left: 0;
   right: 0;
   padding: 12px 16px;
-  background: rgba(205, 189, 189, 0.42);
-  color: #fff;
-  font-size: 14px;
+  background: rgba(255, 255, 255, 0.42);
+  color: #000;
+  font-size: 20px;
   font-weight: bold;
 }
 
