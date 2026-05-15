@@ -85,11 +85,16 @@ header {
   opacity: 0.45;
 }
 
+.hero {
+  max-height: 620px;
+  overflow: hidden;
+}
+
 .hero img {
   width: 100%;
-  height: 580px;
+  height: 620px;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 30%;
 }
 
 .intro {
@@ -205,9 +210,9 @@ header {
 
 .banner img {
   width: 100%;
-  height: 900px;
+  height: 600px;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 60%;
 }
 
 .banner-btn {
