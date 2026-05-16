@@ -1,0 +1,86 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 32px 16px;
+}
+
+.logo {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#nav-toggle {
+  display: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #111;
+}
+
+.header-nav {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+.header-nav a {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #111;
+  transition: opacity 0.2s;
+}
+
+.header-nav a:hover {
+  opacity: 0.45;
+}
