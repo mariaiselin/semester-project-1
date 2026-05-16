@@ -1,0 +1,279 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+ 
+img {
+  display: block;
+  width: 100%;
+}
+ 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 32px 16px;
+}
+ 
+.logo {
+  font-size: 14px;
+  line-height: 1.4;
+}
+ 
+#nav-toggle {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+ 
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+ 
+.nav-toggle-label span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #111;
+}
+ 
+.header-nav {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+}
+ 
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+ 
+.header-nav a {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #111;
+  transition: opacity 0.2s;
+}
+ 
+.header-nav a:hover {
+  opacity: 0.45;
+}
+
+.se-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.se-hero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(0.6);
+}
+
+.se-hero-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+.se-hero-title h1 {
+  font-size: 52px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+}
+
+.se-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 32px 60px;
+}
+
+.se-main h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.se-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  margin-bottom: 48px;
+  align-items: start;
+}
+
+.se-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.se-text h3 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+ 
+.se-text p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #333;
+}
+
+/* FOOTER */
+ 
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.banner-btn {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  padding: 48px 32px 40px;
+}
+
+.footer-grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+
+.footer-col h3 {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-top: 20px;
+  color: #111;
+}
+
+.footer-col h3:first-child {
+  margin-top: 0;
+}
+
+.footer-col p,
+.footer-col a {
+  font-size: 13px;
+  color: #000;
+  line-height: 1.85;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.btn-yellow {
+  display: inline-block;
+  background: #FFE098;
+  color: #111;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 11px 26px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.btn-yellow:hover {
+  background: #eee6ba;
+}
+
+/* TABLER */
+
+@media (max-width: 900px) {
+ 
+  .nav-toggle-label {
+    display: flex;
+  }
+ 
+  .header-nav {
+    display: none;
+    justify-content: flex-start;
+    border-bottom: none;
+    padding: 16px 32px;
+  }
+ 
+  #nav-toggle:checked ~ .header-nav {
+    display: flex;
+  }
+ 
+  .header-nav ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+ 
+  .se-hero img {
+    height: 380px;
+  }
+ 
+  .se-hero-title h1 {
+    font-size: 36px;
+  }
+ 
+  .se-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+ 
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+}
